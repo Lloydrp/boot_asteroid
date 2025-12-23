@@ -1,0 +1,15 @@
+line-length = 120
+target-version = "py312"
+
+[lint]
+select = ["ALL"]
+ignore = [
+    # Docstrings - not enforced
+    "D100", "D101", "D102", "D103", "D104", "D105", "D106", "D107",
+    "D203", "D213",
+]
+
+[format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
